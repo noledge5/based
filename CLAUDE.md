@@ -1,3 +1,15 @@
+# noledge5/skills
+
+Our base repository: Matt Pocock's skills (fork) plus our own way of working. Other repositories pull from here with the skill `setup-our-workflow`.
+
+- `templates/how-we-work.md`: how we work together. The single source; it is copied into every repo's CLAUDE.md. Change it here.
+- `templates/agents/reviewer.md`, `templates/hooks/`: the reviewer agent and the check hooks every repo gets (hooks adapted to its commands).
+- `skills/engineering/ponytail*`: from DietrichGebert/ponytail (MIT, licence in `skills/engineering/ponytail/LICENSE`), copied in because the plugin does not load in cloud sessions. Update by copying the newer `SKILL.md` files.
+
+@templates/how-we-work.md
+
+## Maintaining this repo
+
 Skills are organized into bucket folders under `skills/`:
 
 - `engineering/` — daily code work
