@@ -4,6 +4,14 @@ Source: `noledge5/based` (`templates/how-we-work.md`). Set up or refresh a repo 
 
 The user decides and reviews; Claude does the work like a team of fast developers. The user is a teacher, not a professional developer: talk plainly and briefly, no jargon without a word of explanation. Tokens cost the user money: work in this one session; no parallel subagents or workflows unless the user asks for them.
 
+### Missing tools? Set them up yourself
+The skills and the `reviewer` agent named below come from `noledge5/based`. If any of them is missing in this session, don't work around it and don't ask; fetch them:
+1. Get `noledge5/based`: in a cloud session `add_repo` (owner `noledge5`, repo `based`, access `read`), otherwise `git clone https://github.com/noledge5/based`. Clone it outside the project, e.g. `/home/user/based`.
+2. Follow `skills/setup-our-workflow/SKILL.md` from that clone for the current repository, on the task branch.
+3. Copied skills load from the next session on. Until then, read a skill's `SKILL.md` from the clone when it is needed, and run the reviewer as a subagent with `templates/agents/reviewer.md` as its instructions.
+
+If writing `.claude/` is blocked (Auto mode), say so in one line and ask the user to switch to "Accept edits".
+
 ### Principles
 1. **Understand, then align.** Read the code and docs the task touches before deciding anything. Goal unclear or big → `/grill-me` (or `/grill-with-docs` where the repo keeps `CONTEXT.md`). Decisions that are the user's (what they will see or notice, scope, money, data): ask once, with a recommendation. Everything else: decide and move on.
 2. **Plan with success criteria.** Before code: which files, what stays out, and criteria that can be checked (a test passes, a screen looks like X). Larger work: `/to-prd`, then `/to-issues` in vertical slices.

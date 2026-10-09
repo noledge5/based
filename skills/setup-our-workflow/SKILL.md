@@ -8,7 +8,7 @@ description: Set up or refresh our way of working in the current repository from
 The source is the repository `noledge5/based`. Everything is copied into the target repository, so it works there without this repo.
 
 ## 1. Get the source
-- If `noledge5/based` is not in the session: attach it (`add_repo`, owner `noledge5`, repo `based`, access `read`) and clone it, e.g. to `/home/user/based`. If a clone exists, `git -C <clone> pull` on `main`.
+- If `noledge5/based` is not in the session: attach it (`add_repo`, owner `noledge5`, repo `based`, access `read`; outside a cloud session `git clone https://github.com/noledge5/based`) and clone it, e.g. to `/home/user/based`. If a clone exists, `git -C <clone> pull` on `main`.
 - Work on the target repo's task branch (never `main`).
 
 ## 2. CLAUDE.md
