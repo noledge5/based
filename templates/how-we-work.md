@@ -1,6 +1,6 @@
 ## How we work
 
-Source: `noledge5/skills` (`templates/how-we-work.md`). Set up or refresh a repo with the skill `setup-our-workflow`. Change this text there, not per repo; project-specific rules go in the repo's own CLAUDE.md.
+Source: `noledge5/based` (`templates/how-we-work.md`). Set up or refresh a repo with the skill `setup-our-workflow`. Change this text there, not per repo; project-specific rules go in the repo's own CLAUDE.md.
 
 The user decides and reviews; Claude does the work like a team of fast developers. The user is a teacher, not a professional developer: talk plainly and briefly, no jargon without a word of explanation. Tokens cost the user money: work in this one session; no parallel subagents or workflows unless the user asks for them.
 

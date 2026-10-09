@@ -1,14 +1,14 @@
 ---
 name: setup-our-workflow
-description: Set up or refresh our way of working in the current repository from noledge5/skills - the "How we work" section in CLAUDE.md, the skills, the reviewer agent and the check hooks. Use when the user says "set up our workflow", "bring in our skills", "refresh our workflow", or starts work in a repository that has no "How we work" section yet.
+description: Set up or refresh our way of working in the current repository from noledge5/based - the "How we work" section in CLAUDE.md, the skills, the reviewer agent and the check hooks. Use when the user says "set up our workflow", "bring in our skills", "refresh our workflow", or starts work in a repository that has no "How we work" section yet.
 ---
 
 # Set up our workflow in a repository
 
-The source is the repository `noledge5/skills`. Everything is copied into the target repository, so it works there without this repo.
+The source is the repository `noledge5/based`. Everything is copied into the target repository, so it works there without this repo.
 
 ## 1. Get the source
-- If `noledge5/skills` is not in the session: attach it (`add_repo`, owner `noledge5`, repo `skills`, access `read`) and clone it, e.g. to `/home/user/skills`. If a clone exists, `git -C <clone> pull` on `main`.
+- If `noledge5/based` is not in the session: attach it (`add_repo`, owner `noledge5`, repo `based`, access `read`) and clone it, e.g. to `/home/user/based`. If a clone exists, `git -C <clone> pull` on `main`.
 - Work on the target repo's task branch (never `main`).
 
 ## 2. CLAUDE.md
@@ -16,7 +16,7 @@ The source is the repository `noledge5/skills`. Everything is copied into the ta
 - Put the content of `templates/how-we-work.md` between the markers `<!-- how-we-work:start -->` and `<!-- how-we-work:end -->` at the end of CLAUDE.md. On a refresh, replace only what is between the markers; everything else in CLAUDE.md belongs to the project and stays.
 
 ## 3. Skills
-Copy these folders from `skills/<bucket>/<name>/` into the target's `.claude/skills/<name>/` (real copies, no symlinks; overwrite on refresh):
+Copy these folders from `skills/<name>/` into the target's `.claude/skills/<name>/` (real copies, no symlinks; overwrite on refresh):
 
 `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `grill-me`, `grill-with-docs`, `tdd`, `diagnose`, `zoom-out`, `to-prd`, `to-issues`, `triage`, `improve-codebase-architecture`, `write-a-skill`, `caveman`, `setup-matt-pocock-skills`, `setup-our-workflow`.
 
